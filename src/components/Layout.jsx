@@ -7,7 +7,7 @@ import './layout.css';
 const Layout = ({ children }) => {
   const notions = useStaticQuery(graphql`
     query NotionContents {
-      allNotionContent {
+      allNotionContent (filter: { contentType: { eq: "NotionContent" } }) {
         edges {
           node {
             id

@@ -13,6 +13,7 @@ exports.createPages = ({ graphql, actions }) => {
             edges {
               node {
                 id
+                contentType
                 internal {
                   type
                 }
@@ -26,12 +27,16 @@ exports.createPages = ({ graphql, actions }) => {
           reject(errors);
         }
 
-        notions.forEach(({ node: { id, internal: { type } } }) => {
+        notions.forEach(({ node: { id, contentType, internal: { type } } }) => {
           if (type === 'NotionContent') {
             createPage({
               path: `/${id}`,
               component,
-              context: { id },
+              context: {
+                id,
+                contentType,
+                type,
+              },
             });
           }
         });

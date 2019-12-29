@@ -4,6 +4,7 @@
   "description": "Get source from notion",
   "version": "1.0.0",
   "author": "wonism <yocee57@gmail.com>",
+  "homepage": "https://gatsby-source-notion-contents-sample.netlify.com/",
   "dependencies": {
     "gatsby": "^2.18.17",
     "gatsby-source-notion-contents": "^1.0.10",

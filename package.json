@@ -6,7 +6,7 @@
   "author": "wonism <yocee57@gmail.com>",
   "homepage": "https://gatsby-source-notion-contents-sample.netlify.com/",
   "dependencies": {
-    "gatsby": "^2.23.1",
+    "gatsby": "^2.32.13",
     "gatsby-source-notion-contents": "^1.1.3",
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
